@@ -43,7 +43,7 @@ function draw() {
   fill(200, 25, 25);
   strokeWeight(0);
   stroke(0);
-  text(mouseCoordinates, 150, 50);
+  text(mouseCoordinates, 150, 20);
 
 }
 
