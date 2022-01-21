@@ -4,6 +4,7 @@
 * Example 5
 * Live server extension required to load resources locally
 * https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+* -> right-click into html file and select 'open with live server' to start
 */
 
 
