@@ -70,6 +70,12 @@ function draw() {
   image(picCloseup,width/2 + 100,height/2+50, 100, 100);
 
 
+  // more elements are need to fullfill requirements
+  stroke(200,0,0);
+  strokeWeight(2);
+  rotate(PI / -7.0);
+  textSize(30);
+  text("More details need!!", 100, 300);
 
 }
 
