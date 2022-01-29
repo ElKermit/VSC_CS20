@@ -15,8 +15,6 @@ function setup() {
   createCanvas(400, 600);
   background(30, 200, 40);
 
-  
-
   picMain = loadImage("./images/main.jpg");
   picIcon = loadImage("./images/icon.png");
   picCloseup = loadImage("./images/close.jpg");
