@@ -1,6 +1,6 @@
 /*
 * CS 20
-* Unit 1
+* Unit 2
 * Example 1
 */
 
