@@ -9,7 +9,7 @@
 /** Global Variables */
 
 let title = "Pythagoras' Theorum";
-let dev = "The sum of the areas of the two squares on the legs (a and b)\n equals the area of the square on the hypotenuse (c)."
+let dev = "The sum of the areas of the two squares on the legs (a and b)\n equals the area of the square on the hypotenuse (c).";
 let widthB = 200;
 
 let p1, p2, p3, a, b, c, area;
@@ -49,7 +49,7 @@ function draw() {
     //label sides (length of each side is calculated on the fly)
     stroke(0);
     fill(0);
-    noStroke()
+    noStroke();
     textSize(20);
     a = p2.y - p1.y;
     b = p3.x - p2.x;
@@ -71,7 +71,7 @@ function draw() {
     //legend
     stroke(0);
     fill(0);
-    noStroke()
+    noStroke();
     textSize(18);
     text("Usage:", 200, 500);
     textSize(14);
