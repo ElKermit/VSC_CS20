@@ -15,7 +15,7 @@ function draw() {
   background(255, 0, 0);
 
   noStroke();
-  fill(255, 255, 0);
+  fill(255, 255,0);
   textSize(44);
   text("Welcome to CS20!", textX, 150);
 
