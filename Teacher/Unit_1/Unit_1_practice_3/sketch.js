@@ -21,12 +21,7 @@ function setup() {
 function testEvenOdd(number) {
   //using an iff statement, check if the variable 'number' is even...
   //print out the result using the print statement
-  if (number % 2 == 0) {
-    print(number + " is even")
-  }
-  else {
-    print(number + " is odd")
-  }
+  
 }
 
 function displayNumber(number) {
@@ -38,9 +33,14 @@ function findLargestNumber(number){
   if (number > largestNumber){
     largestNumber = number;
   }
-  print("current largest number is: " + largestNumber)
+  print("current largest number is: " + number)
 }
 
 // function testEvenOdd(number) {
-
+//   if (number % 2 == 0) {
+//     print(number + " is even")
+//   }
+//   else {
+//     print(number + " is odd")
+//   }
 // }

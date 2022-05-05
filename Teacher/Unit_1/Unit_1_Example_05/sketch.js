@@ -20,7 +20,7 @@
 
 /** Global Variables */
 let cakePic, conPic, presPic;
-let confetti = 400;
+let conPicHeight = 400;
 let font1;
 
 function preload() {
@@ -32,17 +32,15 @@ function preload() {
 
 function setup() {
   let sketch = createCanvas(600, 400);
-  textSize(16)
-
 }
 
 function draw() {
   background(0);
-  image(conPic, 0, 0, 600, confetti);
-  if(confetti < 600){
-    confetti++;
+  image(conPic, 0, 0, 600, conPicHeight);
+  if(conPicHeight >0){
+    conPicHeight--;
   }else{
-    confetti=400;
+    conPicHeight=400;
   }
 
   image(cakePic, 100, 150, 100, 100);

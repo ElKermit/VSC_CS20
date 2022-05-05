@@ -33,16 +33,16 @@ function preload() {
 }
 
 function setup() {
-  let sketch = createCanvas(150, 150);
+  let sketch = createCanvas(300, 300);
 }
 
 function draw() {
   if (isOn) {
-    background(200);
+    background(250);
     image(bulb_on, 0, 0, width, height);
 
   } else {
-    background(200);
+    background(50);
     image(bulb_off, 0, 0, width, height);
   }
 
