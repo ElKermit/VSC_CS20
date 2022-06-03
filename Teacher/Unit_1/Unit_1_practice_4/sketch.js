@@ -30,7 +30,7 @@ function setup() {
 }
 
 function draw() {
-  clear();
+  //clear();
   //introduction
   background(200, 200, 100);
   textSize(40);
@@ -38,7 +38,12 @@ function draw() {
   textSize(30);
   text("Is this a pre-sale or door-sale? ", 50, 100);
 
-  userInput = window.prompt("Enter 'p' for pre-sale, 'd' for dore-sale! ");
+  // create input box
+  let inputElem1 = createInput('');
+  inputElem1.input(onInput1);
+  inputElem1.position(50, 50)
+
+  //userInput = window.prompt("Enter 'p' for pre-sale, 'd' for dore-sale! ");
   if (userInput == 'p') {
     isPreSale = true;
   }
@@ -47,7 +52,11 @@ function draw() {
   }
 
   text("How many tickets would you like to buy? ", 50, 150);
-  userInput = window.prompt("Enter a number from 1 to 99 ");
+  let inputElem2 = createInput('');
+  inputElem2.input(onInput2);
+  inputElem2.position(50, 150)
+
+  //userInput = window.prompt("Enter a number from 1 to 99 ");
   totalTicketCount = parseInt(userInput); //in RL this would need testing to make sure the input is a POSITIVE INTEGER.
   // i.e. by using a try..catch an repeat question until the input is correct
 
@@ -63,8 +72,7 @@ function draw() {
   if (isPreSale) {
     if (totalTicketCount < 2) {
       singleTicketPrice= ticketPrice - (ticketPrice * preSaleDiscount);
-      totalAmountDue = totalTicketCount * singleTicketPricep
-      ;
+      totalAmountDue = totalTicketCount * singleTicketPrice ;
     }
     else if (totalTicketCount < 5) {
       singleTicketPrice= ticketPrice - (ticketPrice * preSaleDiscount) - (ticketPrice * multiDiscount2To4);
@@ -107,12 +115,26 @@ function draw() {
   text("Total amount due: " + totalAmountDue + " $", 50, 360);
 
   //run again/quit?
-  userInput = window.confirm("Press 'OK' to run again, press 'Cancel' to quit ");
+  //userInput = window.confirm("Press 'OK' to run again, press 'Cancel' to quit ");
 
-  if (userInput==true){ //OK was pressed
-    loop(); //this is P5's way of saying execute 'draw()' again
-  }else{
+  // if (userInput==true){ //OK was pressed
+  //   loop(); //this is P5's way of saying execute 'draw()' again
+  // }else{
     noLoop(); //this is P5's way of stopping the draw function
-  }
+  // }
+
+}
+
+function onInput1() {
+
+  // get the text entered
+  fill("black")
+  return this.value();
+}
+
+function onInput2() {
+  // get the text entered
+  fill("black")
+  return this.value();
 
 }
